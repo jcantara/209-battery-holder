@@ -5,7 +5,7 @@ cell_height = 70;
 // configured for Keystone "209" clip:
 clip_gap = 3.5; // gap between wall of holder and battery where spring clip sits, compressed size
 clip_wall = 1.78; // width of printed wall onto which clip clips
-clip_top_wall_to_hook = 5.4; // minimum distance between edge of clip wall and hook on clip
+clip_top_wall_to_hook = 4.6; // minimum distance between edge of clip wall and hook on clip
 clip_width = 8.05;
 
 // holder dimensions
@@ -48,7 +48,7 @@ difference(){
             cube([cell_diameter+wall_thickness*2,wall_thickness,cell_height+clip_gap*2+clip_wall*2]);
         }
         // retainer
-        difference(){
+        /*difference(){
             translate([-cell_diameter/2-wall_thickness,-clip_top_wall_to_hook,-clip_gap]){
                 cube([cell_diameter+wall_thickness*2, clip_top_wall_to_hook, clip_gap+2]);
             }
@@ -64,7 +64,7 @@ difference(){
             translate([0,0,clip_gap]){
                 battery(cell_height+2*clip_gap, cell_diameter);
             }
-        }
+        }*/
     }
     // negative shapes
     union(){
