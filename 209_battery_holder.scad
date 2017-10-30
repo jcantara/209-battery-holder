@@ -1,7 +1,7 @@
 // printer-specific fudge setting to allow enough clearance
 diameter_fudge = 0.4;
 
-// cell dimensions, measured to 32860 cell in-hand
+// cell dimensions, measured to 32650 cell in-hand
 cell_diameter = 33 + diameter_fudge;
 cell_height = 70;
 
